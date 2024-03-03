@@ -1,0 +1,45 @@
+{
+
+    "layer": "top",
+    "position": "top",
+    "output": ["DP-1"],
+    "height": 30,
+    "spacing": 0,
+    "margin-top": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio"],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": " {name} "
+    },
+
+    "clock": {
+        "format": "{:%H:%M - %a, %d %b %Y}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}",
+        "format-icons": {
+            "default": ["", "", ""],
+            "headphones": "󰋋",
+            "headset": "󰋋"
+        },
+
+        "format-muted": "󰖁",
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+
+}

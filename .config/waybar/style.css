@@ -1,0 +1,48 @@
+* {
+    border: none;
+    font-family: HackNerdFont;
+    font-size: 14px;
+    min-height: 30px;
+    font-weight: bold;
+
+}
+
+window#waybar {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 6px 12px 6px 12px;
+}
+
+#workspaces,
+#clock,
+#pulseaudio
+ {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #000000;
+    background-color: #ffffff;
+   }
+
+#workspaces button.active {
+    background: transparent;
+    color:#000000;
+    background-color: #ffffff;
+}
+
+#workspaces button {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#pulseaudio {
+    padding-right: 10px;
+}
+
+

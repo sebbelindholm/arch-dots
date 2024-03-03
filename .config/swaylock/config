@@ -1,0 +1,52 @@
+# general
+fade-in=0.0
+effect-blur=9x9
+show-failed-attempts
+ignore-empty-password
+clock
+datestr=%A %B %d
+daemonize
+screenshots
+
+# indicator
+indicator
+indicator-radius=180
+indicator-thickness=15
+
+# grace
+grace=0
+grace-no-mouse
+grace-no-touch
+
+# colors 
+color=21252B
+separator-color=00000000
+key-hl-color=7dcfff
+bs-hl-color=7dcfff
+
+# text
+font="Hack"
+font-size=70
+text-caps-lock-color=""
+text-clear-color=c0caf5
+text-color=c0caf5
+text-ver-color=c0caf5
+text-wrong-color=f7768e
+
+# inside
+inside-clear-color=282C34
+inside-color=282C34
+inside-ver-color=282C34
+inside-wrong-color=21252B
+
+# line
+line-clear-color=21252B
+line-color=21252B
+line-ver-color=9ece6a
+line-wrong-color=f7768e
+
+# ring
+ring-clear-color=9ccfd8
+ring-color=414868
+ring-ver-color=9ece6a
+ring-wrong-color=f7768e
