@@ -11,7 +11,7 @@ return {
 
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "html", "cssls", "bashls" },
+				ensure_installed = { "rust_analyzer", "lua_ls", "clangd", "html", "cssls", "bashls" },
 			})
 		end,
 	},
@@ -23,6 +23,10 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             lspconfig.bashls.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.rust_analyzer.setup({
                 capabilities = capabilities,
             })
 
