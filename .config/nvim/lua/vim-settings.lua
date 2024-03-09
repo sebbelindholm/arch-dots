@@ -6,4 +6,7 @@ vim.cmd("set laststatus=3")
 vim.cmd("set number")
 vim.g.mapleader = " "
 
+vim.keymap.set('n', '<leader>v', ':vsplit<CR>', {})
+vim.keymap.set('n', '<leader>s', ':split<CR>', {})
+
 
