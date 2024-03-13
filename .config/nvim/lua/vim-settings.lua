@@ -9,4 +9,4 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>v', ':vsplit<CR>', {})
 vim.keymap.set('n', '<leader>s', ':split<CR>', {})
 
-
+vim.o.guifont = "Jetbrains Mono:h14"
