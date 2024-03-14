@@ -8,10 +8,9 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "rust_analyzer", "lua_ls", "clangd", "bashls", "cssls", "html" },
+        config = function()
+            require("mason-lspconfig").setup({
+                ensure_installed = { "rust_analyzer", "lua_ls", "clangd", "bashls", "cssls", "html" },
 			})
 		end,
 	},
@@ -22,19 +21,17 @@ return {
 
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            lspconfig.rust_analyzer.setup({
-                capabilities = capabilities,
-            })
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+			})
 
-            lspconfig.cssls.setup({
-                capabilities = capabilities,
-            })
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
 
-            lspconfig.html.setup({
-                capabilities = capabilities,
-            })
-
-
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
 
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
@@ -43,12 +40,9 @@ return {
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
-            
-            lspconfig.bashls.setup({
-                capabilities = capabilities,
-            })
-
-
+			lspconfig.bashls.setup({
+				capabilities = capabilities,
+			})
 
 			vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
