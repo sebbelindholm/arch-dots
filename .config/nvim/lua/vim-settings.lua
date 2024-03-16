@@ -16,3 +16,4 @@ vim.keymap.set("n", "<leader>v", ":vsplit<CR>", {})
 vim.keymap.set("n", "<leader>s", ":split<CR>", {})
 vim.keymap.set("n", "<C-v>", '"+p')
 vim.keymap.set("v", "<C-c>", '"+y')
+
