@@ -1,5 +1,5 @@
-!#/bin/bash
+#!/bin/bash
 
-LOCATION = "$HOME/.config/dconf/dconf-settings.ini"
+location="$HOME/.config/dconf/dconf-settings.ini"
 
 dconf load / < "$LOCATION"
