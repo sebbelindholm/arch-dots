@@ -13,3 +13,5 @@ eval "$(starship init zsh)"
 #Alias
 alias ls='eza --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dconf_dump='$HOME/Scripts/dconf_dump.sh'
+alias dconf_load='$HOME/Scripts/dconf_load.sh'
