@@ -9,6 +9,7 @@ vim.g.mapleader = " "
 vim.cmd("set termguicolors")
 
 vim.keymap.set("n", "<leader>v", ":vsplit", {})
+vim.keymap.set("n", "<leader>s", ":split", {})
 vim.keymap.set("n", "<Tab>", ":bn<cr>", {})
 vim.keymap.set("n", "<S-Tab>", ":bp<cr>", {})
 vim.keymap.set("n", "<C-Tab>", "<C-w><C-w>", {})
@@ -16,4 +17,21 @@ vim.keymap.set("n", "<leader>v", ":vsplit<CR>", {})
 vim.keymap.set("n", "<leader>s", ":split<CR>", {})
 vim.keymap.set("n", "<C-v>", '"+p')
 vim.keymap.set("v", "<C-c>", '"+y')
+vim.keymap.set("n", "<leader>db", ":bdelete<CR>", {})
 
+vim.keymap.set("n", "<C-h>", "<C-W>h")
+vim.keymap.set("n", "<C-j>", "<C-W>j")
+vim.keymap.set("n", "<C-k>", "<C-W>k")
+vim.keymap.set("n", "<C-l>", "<C-W>l")
+
+function _G.set_terminal_keymap()
+    local opts = {noremap = true}
+    vim.api.nvim_buf_set_keymap(0, 't', '<esc>', [[<C-\><C-n>]], opts)
+    vim.api.nvim_buf_set_keymap(0, 't', 'jk', [[<C-\><C-n>]], opts)
+    vim.api.nvim_buf_set_keymap(0, 't', '<C-h>', [[<C-\><C-n><C-W>h]], opts)
+    vim.api.nvim_buf_set_keymap(0, 't', '<C-j>', [[<C-\><C-n><C-W>j]], opts)
+    vim.api.nvim_buf_set_keymap(0, 't', '<C-k>', [[<C-\><C-n><C-W>k]], opts)
+    vim.api.nvim_buf_set_keymap(0, 't', '<C-l>', [[<C-\><C-n><C-W>l]], opts)
+end
+
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymap()')
