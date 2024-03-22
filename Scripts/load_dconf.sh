@@ -2,4 +2,4 @@
 
 location="$HOME/.config/dconf/dconf-settings.ini"
 
-dconf load / < "$LOCATION"
+dconf load / < "$location"
