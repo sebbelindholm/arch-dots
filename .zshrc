@@ -15,3 +15,5 @@ alias ls='eza --icons --grid --classify --colour=auto --sort=type --group-direct
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias dconf_dump='$HOME/Scripts/dump_dconf.sh'
 alias dconf_load='$HOME/Scripts/load_dconf.sh'
+alias start_laptop='Hyprland --config $HOME/.config/hypr/nvidia.conf'
+alias start_desktop='Hyprland --config $HOME/.config/hypr/desktop.conf'
