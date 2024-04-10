@@ -11,7 +11,7 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
-    icon-theme: 				"WhiteSur";
+    icon-theme: 				"papirus-Dark";
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
