@@ -7,7 +7,8 @@
     "modules-left": [
         "custom/logo",
         "hyprland/workspaces",
-        "hyprland/submap"
+        "hyprland/submap",
+        "custom/fullscreen"
     ],
     "modules-center": [
         "clock"
@@ -27,6 +28,11 @@
         "icon-theme": "WhiteSur",
         "icon-size": 25,
         "tooltip-format": "{title}"
+    },
+    "custom/fullscreen": {
+        "exec": "/home/sebastian/.config/waybar/fullscreen_check.sh",
+        "interval": "once",
+        "signal": 8
     },
     "hyprland/workspaces": {
         "on-click": "activate",

@@ -15,7 +15,7 @@ window#waybar {
 window#waybar.hidden {
   opacity: 0.5;
 }
-
+#custom-fullscreen,
 #submap {
     background: red;
     border-radius: 4px;
