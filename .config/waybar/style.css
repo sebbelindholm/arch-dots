@@ -62,6 +62,7 @@ window#waybar.hidden {
 #backlight,
 #pulseaudio,
 #network,
+#backlight,
 #clock,
 #tray {
   border-radius: 4px;
@@ -86,6 +87,9 @@ window#waybar.hidden {
 
 #memory {
   background-color: #fab387;
+}
+#backlight {
+    background-color: #f5e0dc;
 }
 #battery {
   background-color: #f38ba8;

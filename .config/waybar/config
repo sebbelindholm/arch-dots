@@ -18,6 +18,7 @@
         "memory",
         "network",
         "pulseaudio",
+        "backlight",
         "battery",
         "custom/power"
     ],
@@ -147,5 +148,9 @@
         "format": "󰤆",
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/style2/powermenu.sh &"
-    }
+    },
+    "backlight": {
+	    "format": "{icon}{percent}",
+	    "format-icons": ["", "󰪥", "󰪣", "󰪡", "󰪞"]
+    }   
 }
