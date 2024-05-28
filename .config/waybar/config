@@ -150,7 +150,7 @@
         "on-click": "~/.config/rofi/powermenu/style2/powermenu.sh &"
     },
     "backlight": {
-	    "format": "{icon}{percent}",
-	    "format-icons": ["", "󰪥", "󰪣", "󰪡", "󰪞"]
+	    "format": "{icon} {percent}",
+        "format-icons": ["󰪞", "󰪡", "󰪣", "󰪥", ""]
     }   
 }
