@@ -21,9 +21,9 @@
         "custom/power"
     ],
     "wlr/taskbar": {
-	    "format": "{icon}",
+	    "format": "{icon} {title}",
 	    "icon-size": 25,
-        "icon-theme":"Papirus",
+        "icon-theme":"Gruvbox-Plus-Dark",
 	    "tooltip-format": "{title}",
 	    "on-click": "minimize-raise",
 	    "on-click-middle": "close",
@@ -74,7 +74,7 @@
     "custom/logo": {
         "format": "   ",
         "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh &"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -115,7 +115,7 @@
     "custom/power": {
         "format": "󰤆",
         "tooltip": false,
-        "on-click": "~/.config/rofi/powermenu/style2/powermenu.sh &"
+        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
     },
     "backlight": {
 	    "format": "{icon} {percent}",
