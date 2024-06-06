@@ -37,9 +37,9 @@ window#waybar.hidden {
   box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
   padding: 4px 18px;
   margin: 6px 3px;
-  border-radius: 4px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  border-radius: 4px; 
+  background-color: #303233;
+  color: ghostwhite;
 }
 
 #workspaces button.active {

@@ -38,6 +38,13 @@
       <action name="Execute" command="kitty" />
     </keybind>
 
+    <keybind key="W-S-Return">
+        <action name="Execute" command="neovide"/>
+    </keybind>
+
+    <keybind key="W-Esc">
+        <action name="Execute" command="/home/sebastian/.config/rofi/powermenu/type-2/launcher.sh"
+
     <keybind key="W-Space">
         <action name="Execute" command="/home/sebastian/.config/rofi/launchers/type-1/launcher.sh"/>
     </keybind>
