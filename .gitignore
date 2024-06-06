@@ -1,0 +1,6 @@
+.git/
+.npm/
+.local/
+.cache/
+go/
+.npm/
