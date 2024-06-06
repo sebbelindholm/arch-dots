@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+
+  <theme>
+    <name></name>
+    <cornerRadius>10</cornerRadius>
+    <font name="JetbrainsMono Nerd Font" size="12" />
+    <name>gruvbox-material-dark-blocks</name>
+    <dropShadows>yes</dropShadows>
+    <keepBorder>yes</keepBorder>
+  </theme>
+
+  <desktops number="5">
+  </desktops>
+
+  <keyboard>
+    <default />
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty" />
+    </keybind>
+
+    <keybind key="W-Space">
+      <action name="Execute" command="/home/sebastian/.config/rofi/launchers/launcher.sh"/>
+    </keybind>
+
+     <keybind key="W-Q">
+      <action name="kill"/>
+    </keybind>
+
+    <keybind key="W-S-s">
+        <action name="Execute">
+            <command>grimblast copy area</command>
+        </action>
+    </keybind>
+
+    <keybind key="C-A-l">
+        <action name="Execute">
+            <command>hyprlock</command>
+        </action>
+    </keybind>
+
+    <keybind key="W-f">
+      <action name="ToggleMaximize" />
+    </keybind>
+
+    <keybind key="W-S-f">
+      <action name="ToggleFullscreen" />
+    </keybind>
+
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+
+    <keybind key="W-4">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
+
+    <keybind key="W-5">
+      <action name="GoToDesktop" to="5" />
+    </keybind>
+
+    <keybind key="W-S-1">
+      <action name="SendToDesktop" to="1" />
+    </keybind>
+
+    <keybind key="W-S-2">
+      <action name="SendToDesktop" to="2" />
+    </keybind>
+
+    <keybind key="W-S-3">
+      <action name="SendToDesktop" to="3" />
+    </keybind>
+
+    <keybind key="W-S-4">
+      <action name="SendToDesktop" to="4" />
+    </keybind>
+
+    <keybind key="W-S-5">
+      <action name="SendToDesktop" to="5" />
+    </keybind>
+
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu" />
+      </mousebind>
+
+    </context>
+  </mouse>
+
+</labwc_config>
