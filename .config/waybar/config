@@ -35,7 +35,7 @@
         "interval": "once",
         "signal": 8
     },
-    "hyprland/workspaces": {
+    "wlr/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {

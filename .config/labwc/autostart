@@ -11,7 +11,7 @@ kanshi >/dev/null 2>&1 &
 
 waybar >/dev/null 2>&1 &
 
-dunst >/dev/null 2>&1 &
+mako >/dev/null 2>&1 &
 
 hypridle >/dev/null 2>&1 &
 

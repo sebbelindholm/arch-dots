@@ -14,7 +14,20 @@
     <name>gruvbox-material-dark-blocks</name>
     <dropShadows>yes</dropShadows>
     <keepBorder>yes</keepBorder>
+    <adaptiveSync>fullscreen</adaptiveSync>
   </theme>
+
+  <placement>
+      <policy>automatic</policy>
+  </placement>
+
+  <windowSwitcher show="yes" preview="yes" outlines="yes" allWorkspaces="no">
+  </windowSwitcher>
+
+  <focus>
+    <followMouse>yes</followMouse>
+    <followMouseRequiresMovement>yes</followMouseRequiresMovement>
+  </focus>
 
   <desktops number="5">
   </desktops>
@@ -26,7 +39,7 @@
     </keybind>
 
     <keybind key="W-Space">
-      <action name="Execute" command="/home/sebastian/.config/rofi/launchers/launcher.sh"/>
+        <action name="Execute" command="/home/sebastian/.config/rofi/launchers/type-1/launcher.sh"/>
     </keybind>
 
      <keybind key="W-Q">
@@ -102,7 +115,12 @@
       <mousebind button="Right" action="Press">
         <action name="ShowMenu" menu="root-menu" />
       </mousebind>
+    </context>
 
+    <context name="Frame">
+	  <mousebind button="W-Right" action="Drag">
+	    <action name="Resize"/>
+	  </mousebind>
     </context>
   </mouse>
 
