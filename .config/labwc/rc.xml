@@ -105,6 +105,9 @@
     <keybind key="W-S-5">
       <action name="SendToDesktop" to="5" />
     </keybind>
+    <keybind key="W-b">
+      <action name="ToggleDecorations" />
+    </keybind>
 
   </keyboard>
 
@@ -113,7 +116,7 @@
     <!-- Show a custom menu on desktop right click -->
     <context name="Root">
       <mousebind button="Right" action="Press">
-        <action name="ShowMenu" menu="root-menu" />
+        <action name="ShowMenu" menu="custom-menu" />
       </mousebind>
     </context>
 
