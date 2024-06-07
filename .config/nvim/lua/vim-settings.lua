@@ -7,6 +7,7 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.g.mapleader = " "
 vim.cmd("set termguicolors")
+vim.opt.fillchars = {eob = " "}
 
 vim.keymap.set("n", "<leader>v", ":vsplit", {})
 vim.keymap.set("n", "<leader>s", ":split", {})

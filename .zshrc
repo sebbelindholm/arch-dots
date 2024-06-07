@@ -4,6 +4,8 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 
+bindkey -e
+
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
