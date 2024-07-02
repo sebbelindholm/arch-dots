@@ -22,7 +22,7 @@ while [ true ]; do
         exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
 	break;
     elif [[ "$choice" -eq 4 ]]; then
-	echo "Starting KDE"
+	echo "Starting labwc"
         exec labwc
 	break;
     elif [[ "$choice" -eq 5 ]]; then
